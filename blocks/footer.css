@@ -1,7 +1,14 @@
-.footer__image {
+.footer {
   display: flex;
   justify-content: center;
   align-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer__copyright {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  opacity: 70%;
 }

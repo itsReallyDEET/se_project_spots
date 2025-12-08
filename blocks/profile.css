@@ -8,6 +8,7 @@
   height: 190px;
   width: 190px;
   margin-right: 20px;
+  border-radius: 8px;
 }
 
 .profile__column {
@@ -56,7 +57,7 @@
 
 .profile__edit-btn:hover {
   opacity: 100%;
-  transition: 0s;
+  transition: opacity 0.3s ease;
 }
 
 .profile__add-btn {
@@ -79,7 +80,7 @@
 
 .profile__add-btn:hover {
   opacity: 80%;
-  transition: 0s;
+  transition: opacity 0.3s ease;
 }
 
 @media screen and (max-width: 628px) {
