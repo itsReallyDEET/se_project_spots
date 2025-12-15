@@ -20,5 +20,9 @@ Images have been downloaded from figma, and optimized before uploading them to t
 
 ## Project Pitch Video
 
-Check out [Pitch Video Link Here](https://www.loom.com/share/ff37cebb4f7a4328a0a73b26667481f1), where I describe my
+Check out (https://www.loom.com/share/ff37cebb4f7a4328a0a73b26667481f1), where I describe my
 project and some challenges I faced while building it.
+
+## GitHub Pages
+
+Click here (https://github.com/itsReallyDEET/se_project_spots.git) to access GitHub Pages.
