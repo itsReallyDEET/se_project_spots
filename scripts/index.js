@@ -33,13 +33,28 @@ const initialCards = [
 const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
+const editProfileFormEl = editProfileModal.querySelector(".modal__form");
+const editProfileNameInput = editProfileModal.querySelector(
+  "#profile-name-input"
+);
+const editProfileDescriptionInput = editProfileModal.querySelector(
+  "#profile-description-input"
+);
 
 const newPostBtn = document.querySelector(".profile__add-btn");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
+const newCardFormEl = newPostModal.querySelector(".modal__form");
+const newNameInput = newPostModal.querySelector("#card-caption-input");
+const newLinkInput = newPostModal.querySelector("#card-image-input");
+
+const profileNameEl = document.querySelector(".profile__name");
+const profileDescriptionEl = document.querySelector(".profile__description");
 
 editProfileBtn.addEventListener("click", function () {
   editProfileModal.classList.add("modal_is-opened");
+  editProfileNameInput.value = profileNameEl.textContent;
+  editProfileDescriptionInput.value = profileDescriptionEl.textContent;
 });
 
 editProfileCloseBtn.addEventListener("click", function () {
@@ -53,6 +68,28 @@ newPostBtn.addEventListener("click", function () {
 newPostCloseBtn.addEventListener("click", function () {
   newPostModal.classList.remove("modal_is-opened");
 });
+
+function handleProfileFormSubmit(evt) {
+  evt.preventDefault();
+
+  profileNameEl.textContent = editProfileNameInput.value;
+  profileDescriptionEl.textContent = editProfileDescriptionInput.value;
+
+  editProfileModal.classList.remove("modal_is-opened");
+}
+
+editProfileFormEl.addEventListener("submit", handleProfileFormSubmit);
+
+function handleAddCardSubmit(evt) {
+  evt.preventDefault();
+
+  console.log(newNameInput);
+  console.log(newLinkInput);
+
+  newPostModal.classList.remove("modal_is-opened");
+}
+
+newCardFormEl.addEventListener("submit", handleAddCardSubmit);
 
 initialCards.forEach(function (card) {
   console.log(card.name);

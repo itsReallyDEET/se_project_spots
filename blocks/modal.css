@@ -1,5 +1,6 @@
 .modal {
   visibility: hidden;
+  opacity: 0;
   background-color: #00000080;
   position: fixed;
   top: 0;
@@ -10,15 +11,18 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  transition: opacity 0.5s ease, visibility 0s linear 0.5s;
 }
 
 .modal_is-opened {
   visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease, visibility 0s;
 }
 
 .modal__close-btn {
   position: absolute;
-  background: url(./images/close-icon.svg);
+  background: url(../images/close-icon.svg);
   border: none;
   width: 40px;
   height: 40px;
