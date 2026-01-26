@@ -36,12 +36,12 @@
   height: 40px;
   top: 32px;
   right: 50px;
-  opacity: 40%;
+  opacity: 0.4;
   transition: opacity 0.3s ease;
 }
 
 .modal__close-btn_preview {
-  background-image: url(../images/close-Icon-preview.svg);
+  background-image: url(../images/close-icon-preview.svg);
   width: 40px;
   height: 40px;
   opacity: 1;
@@ -51,11 +51,11 @@
 }
 
 .modal__close-btn_preview:hover {
-  background-image: url(../images/close-Icon-preview-hover.svg);
+  background-image: url(../images/close-icon-preview-hover.svg);
 }
 
 .modal__close-btn:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .modal__container {

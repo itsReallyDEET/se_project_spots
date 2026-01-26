@@ -65,6 +65,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                required
               />
             </label>
             <label for="profile-description-input" class="modal__label">
@@ -74,6 +75,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
+                required
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
@@ -94,6 +96,7 @@
                 type="url"
                 class="modal__input"
                 placeholder="Place a link to the picture"
+                required
               />
             </label>
             <label for="card-caption-input" class="modal__label">
@@ -103,6 +106,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
+                required
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
@@ -110,13 +114,14 @@
         </div>
       </div>
 
-    <div class="modal modal_preview" id="preview-modal">
-        <div class="modal__container_preview">
-            <button type="button" class="modal__close-btn modal__close-btn_preview"></button>
-            <img src="#" alt="" class="modal__image-preview">
-            <p class="modal__caption"></p>
-          </div>
-
+      <div class="modal modal_preview" id="preview-modal">
+        <div class="modal__container modal__container_preview">
+          <button
+            type="button"
+            class="modal__close-btn modal__close-btn_preview"
+          ></button>
+          <img src="#" alt="" class="modal__image-preview" />
+          <p class="modal__caption"></p>
         </div>
       </div>
     </div>

@@ -38,7 +38,7 @@
   font-weight: 500;
   margin: 0;
   color: #212121;
-  opacity: 70%;
+  opacity: 0.7;
 }
 
 .profile__edit-btn {
@@ -47,7 +47,7 @@
   font-weight: 500;
   line-height: 100%;
   color: #212121;
-  opacity: 70%;
+  opacity: 0.7;
   background: none;
   border: none;
   display: flex;
@@ -56,8 +56,9 @@
 }
 
 .profile__edit-btn:hover {
-  opacity: 100%;
+  opacity: 1;
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .profile__add-btn {
@@ -79,8 +80,9 @@
 }
 
 .profile__add-btn:hover {
-  opacity: 80%;
+  opacity: 0.8;
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 628px) {
