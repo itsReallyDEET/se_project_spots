@@ -10,14 +10,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+  padding: 0 10px;
+  transition:
+    opacity 0.5s ease,
+    visibility 0s linear 0.5s;
+}
+
+.modal_preview {
+  padding: 0 16px;
 }
 
 .modal_is-opened {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.5s ease, visibility 0s;
+  transition:
+    opacity 0.5s ease,
+    visibility 0s;
 }
 
 .modal__close-btn {
@@ -30,6 +38,20 @@
   right: 50px;
   opacity: 40%;
   transition: opacity 0.3s ease;
+}
+
+.modal__close-btn_preview {
+  background-image: url(../images/close-Icon-preview.svg);
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  top: 0;
+  right: -52.5px;
+  position: absolute;
+}
+
+.modal__close-btn_preview:hover {
+  background-image: url(../images/close-Icon-preview-hover.svg);
 }
 
 .modal__close-btn:hover {
@@ -95,6 +117,29 @@
   color: #fcf5e5;
 }
 
+.modal__container_preview {
+  position: relative;
+}
+
+.modal__image-preview {
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 8px;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.modal__caption {
+  background-color: #212121;
+  color: white;
+  display: inline-block;
+  text-align: left;
+  border-radius: 8px;
+  margin-top: 8px;
+  padding: 4px 8px;
+}
+
 @media screen and (max-width: 628px) {
   .modal__submit-btn {
     max-width: none;
@@ -108,5 +153,16 @@
 
   .modal__input::placeholder {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .modal__close-btn_preview {
+    top: -48px;
+    right: 0;
+  }
+
+  .modal__image-preview {
+    max-width: unset;
   }
 }

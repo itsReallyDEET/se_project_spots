@@ -34,9 +34,35 @@
   opacity: 40%;
 }
 
+.card__like-btn_active {
+  background-image: url(../images/liked.svg);
+  opacity: 1;
+}
+
 .card__like-btn:hover {
   opacity: 100%;
   transition: opacity 0.3s ease;
+}
+
+.card__like-btn_active:hover {
+  opacity: 0.4;
+}
+
+.card__del-btn {
+  background-image: url(../images/delete.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 10px 0 0 371px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  border: none;
+  border-radius: 16px;
+}
+
+.card__del-btn:hover {
+  background-image: url(../images/delete-hover.svg);
 }
 
 @media screen and (max-width: 628px) {
