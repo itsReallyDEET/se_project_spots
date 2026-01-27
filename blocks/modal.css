@@ -45,8 +45,8 @@
   width: 40px;
   height: 40px;
   opacity: 1;
-  top: 0;
-  right: -52.5px;
+  top: 0px;
+  right: -45px;
   position: absolute;
 }
 
@@ -119,6 +119,9 @@
 
 .modal__container_preview {
   position: relative;
+  background: none;
+  width: fit-content;
+  padding: 0px;
 }
 
 .modal__image-preview {
@@ -163,6 +166,6 @@
   }
 
   .modal__image-preview {
-    max-width: unset;
+    max-width: 288px;
   }
 }
