@@ -20,7 +20,7 @@ Images have been downloaded from figma, and optimized before uploading them to t
 
 ## Project Pitch Video
 
-Check out (https://www.loom.com/share/ff37cebb4f7a4328a0a73b26667481f1), where I describe my
+Check out (https://www.loom.com/share/2d6fb8c2ff7d4342a3c88268b17b9766), where I describe my
 project and some challenges I faced while building it.
 
 ## GitHub Pages
