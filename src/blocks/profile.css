@@ -4,11 +4,41 @@
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
 
+.profile__avatar-container {
+  position: relative;
+  margin-right: 20px;
+}
+
+.profile__avatar-container:hover .profile__avatar-btn {
+  visibility: visible;
+  cursor: pointer;
+}
+
 .profile__avatar {
   height: 190px;
   width: 190px;
-  margin-right: 20px;
   border-radius: 8px;
+}
+
+.profile__avatar-btn {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 8px;
+  border: none;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  gap: 8px;
+  color: #ffffff;
+  line-height: 100%;
+}
+
+.profile__avatar-btn::after {
+  content: "Edit Avatar";
 }
 
 .profile__column {
@@ -94,6 +124,39 @@
     padding-top: 20px;
   }
 
+  .profile__avatar-btn {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    visibility: visible;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .profile__avatar-btn::after {
+    content: "";
+  }
+
+  .profile__avatar-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+  }
+
+  .profile__pencil-icon {
+    margin-left: 8px;
+  }
+
   .profile__avatar {
     margin: 0 0 12px;
     height: 80px;
@@ -125,3 +188,5 @@
     justify-content: center;
   }
 }
+
+/* profile__avatar-btn needs styling */
