@@ -12,7 +12,7 @@ This project is made so all the elements are displayed correctly on popular scre
 
 **Figma**
 
-- (https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+- https://www.figma.com/design/mXGZ6wZ4QPKx5KjpHX9QCV/Sprint-9-Project--Spots?node-id=0-1&p=f&t=JNohKsJsIptMF3Oc-0
 
 **Images**
 
@@ -20,7 +20,7 @@ Images have been downloaded from figma, and optimized before uploading them to t
 
 ## Project Pitch Video
 
-Check out (https://www.loom.com/share/2d6fb8c2ff7d4342a3c88268b17b9766), where I describe my
+Check out (https://www.loom.com/share/ae7fe687851a4693b76a4c47fb5411ba), where I describe my
 project and some challenges I faced while building it.
 
 ## GitHub Pages

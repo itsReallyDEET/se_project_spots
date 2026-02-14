@@ -28,6 +28,7 @@ api
 
     profileNameEl.textContent = userData.name;
     profileDescriptionEl.textContent = userData.about;
+    document.querySelector(".profile__avatar").src = userData.avatar;
   })
 
   .catch(console.error);
