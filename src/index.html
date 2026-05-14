@@ -6,31 +6,47 @@
     <meta name="description" content="Spot stuff" />
     <meta name="author" content="Marcus Robinson Jr." />
     <meta name="keywords" content="HTML, CSS, PICS" />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
     <title>Spots</title>
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <img src="./images/Logo.svg" alt="Spot logo" class="header__logo" />
+        <img
+          src="<%=require('./images/logo.svg')%>"
+          alt="Spot logo"
+          class="header__logo"
+        />
       </header>
       <main class="content">
         <section class="profile page__section">
-          <img
-            src="./images/avatar.jpg"
-            alt="Bessie Coleman"
-            class="profile__avatar"
-          />
+          <div class="profile__avatar-container">
+            <button class="profile__avatar-btn">
+              <img
+                src="<%=require('./images/pencil-light.svg')%>"
+                alt="Pencil icon light"
+                class="profile__pencil-icon"
+              />
+            </button>
+            <img
+              src="<%=require('./images/avatar.jpg')%>"
+              alt="Bessie Coleman"
+              class="profile__avatar"
+            />
+          </div>
           <div class="profile__column">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
             <button type="button" class="profile__edit-btn">
-              <img src="./images/pencil.svg" alt="Pencil icon" />Edit Profile
+              <img
+                src="<%=require('./images/pencil.svg')%>"
+                alt="Pencil icon"
+              />Edit Profile
             </button>
           </div>
           <button type="button" class="profile__add-btn">
-            <img src="./images/plus.svg" alt="plus icon" />New Post
+            <img src="<%=require('./images/plus.svg')%>" alt="plus icon" />New
+            Post
           </button>
         </section>
         <section class="cards page__section">
@@ -146,8 +162,46 @@
           <p class="modal__caption"></p>
         </div>
       </div>
+
+      <div class="modal" id="avatar-modal">
+        <div class="modal__container">
+          <div class="modal__row">
+            <button type="button" class="modal__close-btn"></button>
+            <h2 class="modal__title">Edit profile avatar</h2>
+          </div>
+          <form class="modal__form" id="edit-avatar-form" novalidate>
+            <label for="profile-avatar-input" class="modal__label">
+              Avatar
+              <input
+                id="profile-avatar-input"
+                type="url"
+                class="modal__input"
+                name="avatar"
+                placeholder="Avatar goes here"
+                required
+              />
+              <span
+                id="profile-avatar-input-error"
+                class="modal__input-error"
+              ></span>
+            </label>
+
+            <button type="submit" class="modal__submit-btn">Save</button>
+          </form>
+        </div>
+      </div>
+     <div class="modal" id="delete-modal">
+      <div class="modal__container">
+
+
+          <button type="button" class="modal__close-btn modal__close-btn_delete"></button>
+          <h2 class="modal__title modal__delete-card-title">Are you sure you want to delete this image?</h2>
+
+        <form class="modal__form modal__delete-card-form" id="delete-form">
+          <button type="submit" class="modal__card-delete-btn">Delete</button>
+          <button type="button" class="modal__card-cancel-btn">Cancel</button>
+        </form>
+      </div>
     </div>
-    <script src="./scripts/validation.js"></script>
-    <script src="./scripts/index.js"></script>
   </body>
 </html>
